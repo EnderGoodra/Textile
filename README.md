@@ -3,6 +3,7 @@ A Balatro mod that overrides the base game's `evaluate()` function, adding in so
 
 ## Added styles:
 `{B:<integer>}` Creates a box around the selection, much like `{X: }` does for the base game. The color for the box is selected in a similar way to `{V: }`, where the provided integer acts as the index in the `colours` table, returned from `loc_vars`.
+
 Curiously, this seems to allow spaces, unlike `{X: }`, but I am still learning why.
 ```lua
 text = {
