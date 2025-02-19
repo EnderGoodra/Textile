@@ -1,10 +1,10 @@
 # Textile
-A Balatro mod that overrides the base game's `evaluate()` function, adding in some extra style options for text.
+A Balatro mod that modifies the base game's `evaluate()` function, adding in some extra style options for text.
 
-## Added styles:
-`{B:<integer>}` Creates a box around the selection, much like `{X: }` does for the base game. The color for the box is selected in a similar way to `{V: }`, where the provided integer acts as the index in the `colours` table, returned from `loc_vars`.
+## Changes:
+`{B:<integer>}` A new text style that creates a box around the selection, much like `{X: }` does for the base game. The color for the box is selected in a similar way to `{V: }`, where the provided integer acts as the index in the `colours` table, returned from `loc_vars`.
 
-Curiously, this seems to allow spaces, unlike `{X: }`, but I am still learning why.
+Note that this allows a box to contain only space characters if desired, unlike `{X: }` which truncates any whitespace characters present.
 ```lua
 text = {
   'This is a {B:1,C:white}test{} for the {B:2,C:red}B{} style'
@@ -21,4 +21,11 @@ loc_vars = function(self, info_queue, card)
     },
   }
 end
+```
+
+`{X: }` now supports having it's text color assigned using `{V: }`
+```lua
+text = {
+  'This is a {X:1,C:white}test{} for the {X:2,V:1}X{} change'
+}
 ```
