@@ -23,7 +23,7 @@ loc_vars = function(self, info_queue, card)
 end
 ```
 
-`{X: }` now supports having it's text color assigned using `{V: }`
+`{X: }` now supports having its text color assigned using `{V: }`
 ```lua
 text = {
   'This is a {X:1,C:white}test{} for the {X:2,V:1}X{} change'
