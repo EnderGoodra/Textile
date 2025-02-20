@@ -1,0 +1,13 @@
+{
+	"id": "gail_textile",
+	"name": "Textile",
+	"author": ["EnderGoodra"],
+	"description": "Adds extra text style options for mod makers",
+	"prefix": "gailtextile",
+	"main_file": "Textile.lua",
+	"priority": -256,
+	"badge_colour": "cc2d2d",
+	"badge_text_colour": "ffffff",
+	"version": "0.0.0a",
+	"dependencies": []
+}
