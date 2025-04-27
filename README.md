@@ -1,3 +1,6 @@
+## Attention
+This mod is now largely redundant, as Steamodded now natively supports most of what this mod supported.
+
 # Textile
 A Balatro mod that modifies the base game's `evaluate()` function, adding in some extra style options for text.
 
